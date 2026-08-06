@@ -45,7 +45,7 @@ export interface Content {
 
 const en: Content = {
   meta: {
-    title: "Alexander Kalinin — Frontend Engineer",
+    title: "Alexander Kalinin · Frontend Engineer",
     description:
       "Frontend Engineer specializing in Next.js, React and TypeScript. Building clean, thoughtful and performant web products.",
   },
@@ -61,23 +61,23 @@ const en: Content = {
     role: "Frontend Engineer",
     tagline: "Next.js · React · TypeScript",
     summary: [
-      "Frontend developer with experience in edtech, e-commerce, real-estate rental and marketing automation platforms. I've worked in teams of different sizes and enjoy clean, readable code, code reviews, a systematic approach to design and thoughtful decision-making.",
-      "My main stack is Next.js, React, Apollo GraphQL and various styling approaches (Tailwind CSS, CSS Modules, CSS-in-JS). It's my core stack, but I'm not tied to specific technologies — I love learning and quickly adapt to any stack, because I genuinely enjoy what I do.",
+      "I'm Alex, a frontend developer with experience in edtech, e-commerce, real-estate rental and marketing automation platforms. I've worked in teams of different sizes and enjoy clean, readable code, code reviews, a systematic approach to design and thoughtful decision-making.",
+      "My main stack is Next.js, React, Apollo GraphQL and various styling approaches (Tailwind CSS, CSS Modules, CSS-in-JS). It's my core stack, but I'm not tied to specific technologies. I love learning and quickly adapt to any stack, because I genuinely enjoy what I do.",
     ],
-    availability: "✅ Open to opportunities",
+    availability: "✅ Actively looking for work",
     location: "📍 Based in Türkiye",
   },
   journey: {
     jobs: [
       {
-        company: "FinTech Company",
+        company: "Established FinTech Company",
         role: "Frontend Engineer",
         period: "May 2026 — Aug 2026",
         tags: ["Next.js", "React Native"],
         highlights: [
-          "Contract fintech project delivering two mobile banking apps (React Native) and two online banking platforms (Next.js) on ambitious deadlines.",
-          "Built Sumsub identity verification (KYC/KYB), gamification mechanics, onboarding flows and banking operations.",
-          "Leaned on AI-assisted tooling — GitHub Copilot, Cursor and Claude Code — to move faster.",
+          "As part of a contract FinTech project, helped successfully launch two online banking platforms (Next.js) and two mobile banking apps (React Native), working in a team of three frontend developers under tight deadlines.",
+          "Also handled Sumsub identity verification (KYC/KYB), gamification, onboarding flows and banking operations.",
+          "Leaned on AI-assisted tooling (GitHub Copilot, Cursor and Claude Code) to move faster.",
         ],
       },
       {
@@ -97,15 +97,15 @@ const en: Content = {
           "React.js",
         ],
         highlights: [
-          "Worked in a small dev team (7 people) on a multilingual learning platform, including integrations with an AI assistant, a video call service, and a custom chat built on GetStream.",
-          "Took part in product discussions: breaking down tasks, setting priorities, and estimating timelines.",
+          "Worked in a small dev team (7 people) on a multilingual learning platform, including integrations with an AI assistant, a video call service and a custom chat built on GetStream.",
+          "Took part in product discussions: breaking down tasks, setting priorities and estimating timelines.",
           "Collaborated with a frontend team (3 developers) to build a custom UI kit and introduced Feature-Sliced Design (FSD) to improve scalability and maintainability.",
           "Set up a monorepo using Turborepo, splitting shared configs and modules into separate packages.",
           "Automated syncing of design tokens between Figma and the frontend.",
           "Set up CI/CD pipelines in GitHub (GitHub Actions) and GitLab.",
           "Introduced unit testing using Vitest.",
           "Built and maintained marketing landing pages.",
-          "Helped establish code reviews in the team, made architectural decisions, and supported others in designing parts of the system.",
+          "Helped establish code reviews in the team, made architectural decisions and supported others in designing parts of the system.",
         ],
       },
       {
@@ -127,9 +127,9 @@ const en: Content = {
           "Git",
         ],
         highlights: [
-          "Developed a React Native astrology app together with another frontend developer — the app is actively working and bringing profit to the client.",
+          "Developed a React Native astrology app together with another frontend developer. The app is actively working and bringing profit to the client.",
           "We also quickly built a corporate website showcasing our work for clients with a great design.",
-          "Helped with the development of an e-commerce project on Next.js in the cycling industry — and many other things too.",
+          "Helped with the development of an e-commerce project on Next.js in the cycling industry and many other things too.",
         ],
       },
       {
@@ -149,7 +149,7 @@ const en: Content = {
         ],
         highlights: [
           "Sped up the frontend build by 5×.",
-          "Refactored code previously written by another frontend team — improved readability and maintainability, and reduced frontend responsibility where possible.",
+          "Refactored code previously written by another frontend team: improved readability and maintainability, and reduced frontend responsibility where possible.",
           "Worked on optimizing pages and key Google metrics.",
           "Removed a large number of duplicate UI components and started implementing a new ui-kit.",
           "Removed unnecessary dependencies almost everywhere and rewrote Emotion styles in the public part using CSS Modules.",
@@ -269,7 +269,7 @@ const en: Content = {
 
 const ru: Content = {
   meta: {
-    title: "Александр Калинин — Frontend-инженер",
+    title: "Александр Калинин · Frontend-инженер",
     description:
       "Frontend-инженер: Next.js, React и TypeScript. Создаю чистые, продуманные и быстрые веб-продукты.",
   },
@@ -285,23 +285,23 @@ const ru: Content = {
     role: "Frontend-инженер",
     tagline: "Next.js · React · TypeScript",
     summary: [
-      "Frontend-разработчик с опытом в edtech, e-commerce, платформах аренды недвижимости и marketing automation. Работал в командах разного размера, люблю чистый и читаемый код, код-ревью, системный подход к дизайну и продуманные решения.",
-      "Основной стек — Next.js, React, Apollo GraphQL и разные подходы к стилизации (Tailwind CSS, CSS Modules, CSS-in-JS). Но я не держусь за конкретные технологии: люблю учиться и легко осваиваю новый стек — просто потому что по-настоящему люблю своё дело.",
+      "Я Алекс, frontend-разработчик с опытом в edtech, e-commerce, платформах аренды недвижимости и marketing automation. Работал в командах разного размера, люблю чистый и читаемый код, код-ревью, системный подход к дизайну и продуманные решения.",
+      "Основной стек: Next.js, React, Apollo GraphQL и разные подходы к стилизации (Tailwind CSS, CSS Modules, CSS-in-JS). Но я не привязан к конкретным технологиям: легко осваиваю новое и люблю учиться.",
     ],
-    availability: "✅ Открыт к предложениям",
+    availability: "✅ Активно ищу работу",
     location: "📍 Живу в Турции",
   },
   journey: {
     jobs: [
       {
-        company: "Финтех-компания",
+        company: "Действующая FinTech-компания",
         role: "Frontend-инженер",
         period: "Май 2026 — Авг 2026",
         tags: ["Next.js", "React Native"],
         highlights: [
-          "Контрактный финтех-проект: два мобильных банковских приложения (React Native) и две платформы онлайн-банкинга (Next.js) в сжатые сроки.",
-          "Реализовал верификацию личности Sumsub (KYC/KYB), геймификацию, онбординг и банковские операции.",
-          "Активно использовали AI-инструменты — GitHub Copilot, Cursor и Claude Code — для ускорения работы.",
+          "В рамках контрактного FinTech-проекта помог успешно выпустить две платформы онлайн-банкинга (Next.js) и два мобильных банковских приложения (React Native), работая в команде из трёх фронтенд-разработчиков в условиях сжатых сроков.",
+          "Также занимался верификацией личности Sumsub (KYC/KYB), геймификацией, онбордингом и банковскими операциями.",
+          "Активно использовали AI-инструменты (GitHub Copilot, Cursor и Claude Code) для ускорения работы.",
         ],
       },
       {
@@ -323,7 +323,7 @@ const ru: Content = {
         highlights: [
           "Работал в небольшой команде (7 человек) над многоязычной образовательной платформой: интеграции с AI-ассистентом, сервисом видеозвонков и собственным чатом на GetStream.",
           "Участвовал в продуктовых обсуждениях: разбивал задачи, расставлял приоритеты и оценивал сроки.",
-          "Вместе с фронтенд-командой из трёх разработчиков собрал собственный UI-kit и внедрил Feature-Sliced Design (FSD) — ради масштабируемости и удобства поддержки.",
+          "Вместе с фронтенд-командой из трёх разработчиков собрал собственный UI-kit и внедрил Feature-Sliced Design (FSD) ради масштабируемости и удобства поддержки.",
           "Настроил монорепозиторий на Turborepo, вынес общие конфиги и модули в отдельные пакеты.",
           "Автоматизировал синхронизацию дизайн-токенов между Figma и фронтендом.",
           "Настроил CI/CD-пайплайны в GitHub (GitHub Actions) и GitLab.",
@@ -351,9 +351,9 @@ const ru: Content = {
           "Git",
         ],
         highlights: [
-          "Вдвоём с другим фронтенд-разработчиком сделал приложение для астрологии на React Native — оно работает и приносит клиенту прибыль.",
-          "Быстро собрали корпоративный сайт с сильным дизайном — витрину наших работ для клиентов.",
-          "Помогал с e-commerce-проектом на Next.js в велоиндустрии — и со многим другим.",
+          "Вдвоём с другим фронтенд-разработчиком сделал приложение для астрологии на React Native. Оно работает и приносит клиенту прибыль.",
+          "Быстро собрали корпоративный сайт с сильным дизайном, витрину наших работ для клиентов.",
+          "Помогал с e-commerce-проектом на Next.js в велоиндустрии и со многим другим.",
         ],
       },
       {
@@ -373,11 +373,11 @@ const ru: Content = {
         ],
         highlights: [
           "Ускорил сборку фронтенда в 5 раз.",
-          "Отрефакторили код, доставшийся от другой фронтенд-команды: сделали его читаемее и удобнее в поддержке, а где могли — разгрузили фронтенд от лишней логики.",
+          "Отрефакторили код, доставшийся от другой фронтенд-команды: сделали его читаемее и удобнее в поддержке, а где могли, разгрузили фронтенд от лишней логики.",
           "Оптимизировал страницы и ключевые метрики Google.",
           "Убрали множество дублирующихся UI-компонентов и начали переходить на новый ui-kit.",
           "Почти везде убрали лишние зависимости и переписали Emotion-стили в публичной части на CSS Modules.",
-          "Занимались поддержкой: исправляли накопившиеся баги и добавляли новые фичи — например, RTO и Veriff.",
+          "Занимались поддержкой: исправляли накопившиеся баги и добавляли новые фичи, например RTO и Veriff.",
           "Помогал с реализацией и структурой данных кастомных блоков статей блога, которые приходят из WordPress.",
           "Настроил внутренние процессы фронтенд-команды: код-ревью, работу с таск-трекерами, обмен опытом.",
         ],

@@ -11,7 +11,7 @@ const t = getContent(locale);
 
 <section id="top" class="mx-auto max-w-3xl px-6 pt-10 pb-10 sm:px-8 sm:pt-14 sm:pb-14">
   <div class="max-w-2xl">
-    <h1 class="sr-only">{t.hero.name} — {t.hero.role}</h1>
+    <h1 class="sr-only">{t.hero.name}, {t.hero.role}</h1>
 
     <div class="max-w-xl space-y-4 text-lg leading-relaxed text-content/90">
       {t.hero.summary.map((line) => <p>{line}</p>)}

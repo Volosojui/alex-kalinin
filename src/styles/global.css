@@ -4,7 +4,7 @@
 /* Enable class-based dark mode (toggle sets .dark on <html>) */
 @custom-variant dark (&:where(.dark, .dark *));
 
-/* Semantic tokens — mapped to Tailwind color utilities (bg-bg, text-content, …) */
+/* Semantic tokens: mapped to Tailwind color utilities (bg-bg, text-content, …) */
 @theme inline {
   --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
   --font-mono: ui-monospace, 'SF Mono', 'JetBrains Mono', monospace;
@@ -18,7 +18,7 @@
   --color-accent-strong: var(--accent-strong);
 }
 
-/* Light theme (default) — pure black & white */
+/* Light theme (default): pure black & white */
 :root {
   --bg: #ffffff;
   --surface: #ffffff;
@@ -31,7 +31,7 @@
   color-scheme: light;
 }
 
-/* Dark theme — pure black & white */
+/* Dark theme: pure black & white */
 .dark {
   --bg: #0a0a0a;
   --surface: #141414;
