@@ -176,7 +176,7 @@ const en: Content = {
           "Adobe Photoshop",
         ],
         highlights: [
-          "Collaborated with studios like loo.ch, m-a-x.design and gorbach.co.",
+          'Collaborated with studios like <a href="https://loo.ch/" target="_blank" rel="noopener noreferrer" class="underline decoration-line underline-offset-4 transition-colors hover:decoration-content">loo.ch</a>, <a href="https://m-a-x.online/" target="_blank" rel="noopener noreferrer" class="underline decoration-line underline-offset-4 transition-colors hover:decoration-content">m-a-x.design</a> and gorbach.co.',
           "Built a UI kit for a marketing automation platform (React, TypeScript, Styled Components, RTL, Cypress).",
           'Frontend for a <a href="https://thelocals.ru/" target="_blank" rel="noopener noreferrer" class="underline decoration-line underline-offset-4 transition-colors hover:decoration-content">real-estate rental site</a> and a universal admin panel reused across projects (Next.js).',
           "E-commerce in cycling & footwear with Bitrix integration (Preact, Next.js, Redux).",
@@ -400,7 +400,7 @@ const ru: Content = {
           "Adobe Photoshop",
         ],
         highlights: [
-          "Сотрудничал со студиями loo.ch, m-a-x.design, gorbach.co и другими.",
+          'Сотрудничал со студиями <a href="https://loo.ch/" target="_blank" rel="noopener noreferrer" class="underline decoration-line underline-offset-4 transition-colors hover:decoration-content">loo.ch</a>, <a href="https://m-a-x.online/" target="_blank" rel="noopener noreferrer" class="underline decoration-line underline-offset-4 transition-colors hover:decoration-content">m-a-x.design</a>, gorbach.co и другими.',
           "Собрал UI-kit для платформы marketing automation (React, TypeScript, Styled Components, RTL, Cypress).",
           'Фронтенд <a href="https://thelocals.ru/" target="_blank" rel="noopener noreferrer" class="underline decoration-line underline-offset-4 transition-colors hover:decoration-content">сайта аренды недвижимости</a> и универсальная админ-панель, которую переиспользовали в нескольких проектах (Next.js).',
           "E-commerce в вело- и обувной нишах с интеграцией Bitrix (Preact, Next.js, Redux).",
