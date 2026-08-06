@@ -1,0 +1,46 @@
+---
+import { getContent, CONTACT_LINKS, type Locale } from '../i18n/content';
+import Section from './Section.astro';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = getContent(locale);
+
+const links = [
+  {
+    label: t.contact.emailLabel,
+    value: CONTACT_LINKS.email,
+    href: `mailto:${CONTACT_LINKS.email}`,
+  },
+  {
+    label: t.contact.linkedinLabel,
+    value: 'linkedin.com/in/alexander-kalinin',
+    href: CONTACT_LINKS.linkedin,
+    external: true,
+  },
+];
+---
+
+<Section id="contact" title={t.nav.contact}>
+  <ul class="space-y-10">
+    {
+      links.map((link) => (
+        <li>
+          <span class="block font-mono text-xs uppercase tracking-wider text-muted">{link.label}</span>
+          <a
+            href={link.href}
+            target={link.external ? '_blank' : undefined}
+            rel={link.external ? 'noopener noreferrer' : undefined}
+            class="group mt-2 inline-flex items-center gap-1.5 text-base text-content underline-offset-4 sm:text-lg"
+          >
+            <span class="group-hover:underline">{link.value}</span>
+            <span class="text-muted transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true">↗</span>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</Section>

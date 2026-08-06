@@ -1,0 +1,102 @@
+@import 'tailwindcss';
+@import '@fontsource-variable/inter';
+
+/* Enable class-based dark mode (toggle sets .dark on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Semantic tokens — mapped to Tailwind color utilities (bg-bg, text-content, …) */
+@theme inline {
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', 'JetBrains Mono', monospace;
+
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-content: var(--content);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+}
+
+/* Light theme (default) — pure black & white */
+:root {
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --content: #0a0a0a;
+  --muted: #737373;
+  --line: rgb(0 0 0 / 0.12);
+  --accent: #0a0a0a;
+  --accent-strong: #000000;
+  --accent-rgb: 10 10 10;
+  color-scheme: light;
+}
+
+/* Dark theme — pure black & white */
+.dark {
+  --bg: #0a0a0a;
+  --surface: #141414;
+  --content: #f5f5f5;
+  --muted: #a1a1a1;
+  --line: rgb(255 255 255 / 0.14);
+  --accent: #fafafa;
+  --accent-strong: #ffffff;
+  --accent-rgb: 235 235 235;
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--content);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Utility: subtle accent gradient text */
+.text-gradient {
+  background: linear-gradient(120deg, var(--accent), var(--accent-strong));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Theme toggle icon cross-fade + rotate */
+.theme-icon {
+  transition:
+    opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.theme-icon--sun {
+  opacity: 1;
+  transform: rotate(0) scale(1);
+}
+.theme-icon--moon {
+  opacity: 0;
+  transform: rotate(-90deg) scale(0.5);
+}
+
+.dark .theme-icon--sun {
+  opacity: 0;
+  transform: rotate(90deg) scale(0.5);
+}
+.dark .theme-icon--moon {
+  opacity: 1;
+  transform: rotate(0) scale(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .theme-icon {
+    transition: none;
+  }
+}

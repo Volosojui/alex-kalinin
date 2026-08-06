@@ -1,0 +1,100 @@
+---
+import '../styles/global.css';
+import { getContent, type Locale } from '../i18n/content';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = getContent(locale);
+const { site } = Astro;
+const canonical = new URL(Astro.url.pathname, site);
+---
+
+<!doctype html>
+<html lang={locale}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link id="favicon" rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{t.meta.title}</title>
+    <meta name="description" content={t.meta.description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang="en" href={new URL('/', site)} />
+    <link rel="alternate" hreflang="ru" href={new URL('/ru/', site)} />
+    <link rel="alternate" hreflang="x-default" href={new URL('/', site)} />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={t.meta.title} />
+    <meta property="og:description" content={t.meta.description} />
+    <meta property="og:url" content={canonical} />
+    <meta name="twitter:card" content="summary" />
+
+    <meta name="generator" content={Astro.generator} />
+
+    {/* Set theme before paint to avoid a flash of the wrong theme */}
+    <script is:inline>
+      (function () {
+        try {
+          const stored = localStorage.getItem('theme');
+          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (stored === 'dark' || (!stored && prefersDark)) {
+            document.documentElement.classList.add('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="min-h-screen antialiased selection:bg-accent/15">
+    <slot />
+
+    <script is:inline>
+      (function () {
+        const link = document.getElementById('favicon');
+        if (!link) return;
+
+        // Lo-fi retro palette — each pixel picks one of these
+        const palette = [
+          '#264653', '#2a9d8f', '#8ab17d', '#e9c46a',
+          '#f4a261', '#e76f51', '#f6f4d2', '#1b1b1e',
+        ];
+        const GRID = 4; // 4×4 pixels — big, chunky lo-fi
+        const FRAMES = 5;
+
+        const buildFrame = () => {
+          let rects = '';
+          for (let y = 0; y < GRID; y++) {
+            for (let x = 0; x < GRID; x++) {
+              const c = palette[(Math.random() * palette.length) | 0];
+              rects += '<rect x="' + x + '" y="' + y + '" width="1" height="1" fill="' + c + '"/>';
+            }
+          }
+          return (
+            '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ' + GRID + ' ' + GRID +
+            '" shape-rendering="crispEdges">' + rects + '</svg>'
+          );
+        };
+
+        // Pre-generate 5 distinct pixel frames
+        const frames = [];
+        for (let f = 0; f < FRAMES; f++) {
+          frames.push('data:image/svg+xml,' + encodeURIComponent(buildFrame()));
+        }
+
+        let i = 0;
+        const apply = () => {
+          link.setAttribute('href', frames[i]);
+          i = (i + 1) % frames.length;
+        };
+
+        apply();
+
+        // Respect reduced-motion: keep the first frame, don't cycle
+        if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+        setInterval(apply, 900);
+      })();
+    </script>
+  </body>
+</html>
