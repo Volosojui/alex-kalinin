@@ -76,7 +76,7 @@ const en: Content = {
         tags: ["Next.js", "React Native"],
         highlights: [
           "As part of a contract FinTech project, helped successfully launch two online banking platforms (Next.js) and two mobile banking apps (React Native), working in a team of three frontend developers under tight deadlines.",
-          "Also handled Sumsub identity verification (KYC/KYB), gamification, onboarding flows and banking operations.",
+          "Also integrated Sumsub identity verification (KYC/KYB), gamification, onboarding flows and banking operations.",
           "Leaned on AI-assisted tooling (GitHub Copilot, Cursor and Claude Code) to move faster.",
         ],
       },
@@ -300,7 +300,7 @@ const ru: Content = {
         tags: ["Next.js", "React Native"],
         highlights: [
           "В рамках контрактного FinTech-проекта помог успешно довести до релиза две платформы онлайн-банкинга (Next.js) и два мобильных банковских приложения (React Native), работая в команде из трёх фронтенд-разработчиков в условиях сжатых сроков.",
-          "Также занимался верификацией личности Sumsub (KYC/KYB), геймификацией, онбордингом и банковскими операциями.",
+          "Также интегрировал верификацию личности Sumsub (KYC/KYB), геймификацию, онбординг и банковские операции.",
           "Активно использовали AI-инструменты (GitHub Copilot, Cursor и Claude Code) для ускорения работы.",
         ],
       },
