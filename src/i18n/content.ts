@@ -67,7 +67,7 @@ const en: Content = {
     tagline: "Next.js · React · TypeScript",
     summary: [
       "I'm Alex, a frontend developer with experience in edtech, e-commerce, real-estate rental and marketing automation platforms. I've worked in teams of different sizes and enjoy clean, readable code, code reviews, a systematic approach to design and thoughtful decision-making.",
-      "My main stack is Next.js, React, Apollo GraphQL and various styling approaches (Tailwind CSS, CSS Modules, CSS-in-JS). It's my core stack, but I'm not tied to specific technologies. I love learning and quickly adapt to any stack, because I genuinely enjoy what I do.",
+      "Core stack: Next.js, React, React Native, Tailwind CSS, CSS Modules, CSS-in-JS and more. But I'm not tied to specific technologies: if a project needs something else, I'll figure it out.",
     ],
     availability: "✅ Actively looking for work",
     location: "📍 Based in Türkiye",
@@ -317,7 +317,7 @@ const ru: Content = {
     tagline: "Next.js · React · TypeScript",
     summary: [
       "Меня зовут Алекс, я frontend-разработчик с опытом в edtech, e-commerce, платформах аренды недвижимости и marketing automation. Работал в командах разного размера, люблю чистый и читаемый код, код-ревью, системный подход к дизайну и продуманные решения.",
-      "Основной стек: Next.js, React, Apollo GraphQL и разные подходы к стилизации (Tailwind CSS, CSS Modules, CSS-in-JS). Но я не привязан к конкретным технологиям: легко осваиваю новое и люблю учиться.",
+      "Основной стек: Next.js, React, React Native, Tailwind CSS, CSS Modules, CSS-in-JS и другие. Но я не привязан к конкретным технологиям: если проекту нужно что-то другое, разберусь.",
     ],
     availability: "✅ Активно ищу работу",
     location: "📍 Живу в Турции",
