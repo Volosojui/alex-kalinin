@@ -236,6 +236,7 @@ const en: Content = {
           "TypeScript",
           "JavaScript",
           "Preact",
+          "Astro",
         ],
       },
       {
@@ -486,6 +487,7 @@ const ru: Content = {
           "TypeScript",
           "JavaScript",
           "Preact",
+          "Astro",
         ],
       },
       {
