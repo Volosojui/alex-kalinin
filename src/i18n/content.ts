@@ -8,6 +8,7 @@ export interface Job {
   period: string;
   location?: string;
   url?: string;
+  responsibilities?: string[];
   highlights: string[];
   tags?: string[];
 }
@@ -35,7 +36,11 @@ export interface Content {
     availability: string;
     location: string;
   };
-  journey: { jobs: Job[] };
+  journey: {
+    jobs: Job[];
+    responsibilitiesLabel: string;
+    achievementsLabel: string;
+  };
   education: { items: Education[] };
   skills: { groups: SkillGroup[] };
   contact: { subtitle: string; emailLabel: string; linkedinLabel: string };
@@ -68,16 +73,34 @@ const en: Content = {
     location: "📍 Based in Türkiye",
   },
   journey: {
+    responsibilitiesLabel: "Key responsibilities",
+    achievementsLabel: "Key tasks and achievements",
     jobs: [
       {
         company: "Established FinTech Company",
         role: "Frontend Engineer",
         period: "May 2026 — Aug 2026",
-        tags: ["Next.js", "React Native"],
+        tags: [
+          "React Native",
+          "Expo",
+          "Next.js",
+          "Sumsub",
+          "HubSpot",
+          "GitHub Copilot",
+          "Cursor",
+          "Claude Code",
+        ],
+        responsibilities: [
+          "Building two mobile banking apps with React Native (Expo) and two online banking web platforms with Next.js on tight deadlines.",
+          "Building features for sign-up and for verifying users and companies.",
+          "Adding gamification to boost engagement.",
+          "Discussing tasks, breaking them down and setting priorities.",
+        ],
         highlights: [
-          "As part of a contract FinTech project, helped successfully launch two online banking platforms (Next.js) and two mobile banking apps (React Native), working in a team of three frontend developers under tight deadlines.",
-          "Also integrated Sumsub identity verification (KYC/KYB), gamification, onboarding flows and banking operations.",
-          "Leaned on AI-assisted tooling (GitHub Copilot, Cursor and Claude Code) to move faster.",
+          "Built two apps and two online banking web platforms and shipped them quickly.",
+          "Built sign-up for regular users and companies, with lead capture in HubSpot.",
+          "Integrated Sumsub for KYC/KYB.",
+          "Added gamification.",
         ],
       },
       {
@@ -86,26 +109,34 @@ const en: Content = {
         period: "Mar 2024 — Apr 2026",
         tags: [
           "Next.js",
-          "ESLint",
-          "Github Actions",
-          "Tailwind CSS",
-          "FSD",
+          "React",
           "Apollo GraphQL",
-          "TypeScript",
+          "Tailwind CSS",
           "Vitest",
-          "Storybook",
-          "React.js",
+          "FSD",
+          "Turborepo",
+          "shadcn",
+          "GetStream",
+        ],
+        responsibilities: [
+          "Building a multilingual learning platform in a team of 7 developers (3 frontend developers).",
+          "Taking part in business discussions: breaking tasks down, setting priorities and timelines.",
+          "Designing the frontend architecture.",
+          "Growing the design system and UI kit.",
+          "Integrating third-party services.",
+          "Setting up CI/CD processes.",
+          "Working with backend and product.",
+          "Code review.",
+          "Discussing architecture decisions.",
+          "Improving the development process and making the team more effective.",
         ],
         highlights: [
-          "Worked in a small dev team (7 people) on a multilingual learning platform, including integrations with an AI assistant, a video call service and a custom chat built on GetStream.",
-          "Took part in product discussions: breaking down tasks, setting priorities and estimating timelines.",
-          "Collaborated with a frontend team (3 developers) to build a custom UI kit and introduced Feature-Sliced Design (FSD) to improve scalability and maintainability.",
-          "Set up a monorepo using Turborepo, splitting shared configs and modules into separate packages.",
-          "Automated syncing of design tokens between Figma and the frontend.",
-          "Set up CI/CD pipelines in GitHub (GitHub Actions) and GitLab.",
-          "Introduced unit testing using Vitest.",
-          "Built and maintained marketing landing pages.",
-          "Helped establish code reviews in the team, made architectural decisions and supported others in designing parts of the system.",
+          "Added multiple languages (next-intl).",
+          "Set up a custom FSD structure and a monorepo with a separate packages layer (Turborepo).",
+          "Integrated and customized chat based on GetStream.",
+          "Introduced code review and unit testing (Vitest).",
+          "Organized the design system and set up token syncing from Figma.",
+          "Set up CI/CD in GitHub (GitHub Actions) and GitLab to automate builds, testing and delivery.",
         ],
       },
       {
@@ -292,16 +323,34 @@ const ru: Content = {
     location: "📍 Живу в Турции",
   },
   journey: {
+    responsibilitiesLabel: "Основные задачи и ответственность",
+    achievementsLabel: "Ключевые задачи и достижения",
     jobs: [
       {
         company: "Действующая FinTech-компания",
         role: "Frontend-инженер",
         period: "Май 2026 — Авг 2026",
-        tags: ["Next.js", "React Native"],
+        tags: [
+          "React Native",
+          "Expo",
+          "Next.js",
+          "Sumsub",
+          "HubSpot",
+          "GitHub Copilot",
+          "Cursor",
+          "Claude Code",
+        ],
+        responsibilities: [
+          "Разработка двух мобильных банковских приложений на React Native (Expo) и двух веб-платформ интернет-банкинга на Next.js в сжатые сроки.",
+          "Разработка фич, связанных с процессом регистрации, верификации пользователей и компаний.",
+          "Внедрение геймификации для повышения вовлечённости.",
+          "Обсуждение задач, декомпозиция и приоритизация.",
+        ],
         highlights: [
-          "В рамках контрактного FinTech-проекта помог успешно довести до релиза две платформы онлайн-банкинга (Next.js) и два мобильных банковских приложения (React Native), работая в команде из трёх фронтенд-разработчиков в условиях сжатых сроков.",
-          "Также занимался разработкой фич, связанных с флоу регистрации обычных пользователей и компаний, их верификацией личности через Sumsub (KYC/KYB), геймификацией и т.д.",
-          "Активно использовали AI-инструменты (GitHub Copilot, Cursor и Claude Code) для ускорения работы.",
+          "Разработал два приложения и две веб-платформы интернет-банкинга, обеспечив быструю доставку.",
+          "Реализовал функциональность регистрации обычных пользователей и компаний со сбором лидов в HubSpot.",
+          "Интегрировал Sumsub для процессов KYC/KYB.",
+          "Реализовал геймификацию.",
         ],
       },
       {
@@ -310,26 +359,34 @@ const ru: Content = {
         period: "Мар 2024 — Апр 2026",
         tags: [
           "Next.js",
-          "ESLint",
-          "Github Actions",
-          "Tailwind CSS",
-          "FSD",
+          "React",
           "Apollo GraphQL",
-          "TypeScript",
+          "Tailwind CSS",
           "Vitest",
-          "Storybook",
-          "React.js",
+          "FSD",
+          "Turborepo",
+          "shadcn",
+          "GetStream",
+        ],
+        responsibilities: [
+          "Разработка многоязычной образовательной платформы в составе команды из 7 разработчиков (3 frontend-разработчика).",
+          "Участие в обсуждении бизнес-задач, их декомпозиции, определении приоритетов и сроков.",
+          "Проектирование frontend-архитектуры.",
+          "Развитие дизайн-системы и UI-кита.",
+          "Интеграция сторонних сервисов.",
+          "Настройка CI/CD процессов.",
+          "Взаимодействие с backend и product.",
+          "Code review.",
+          "Обсуждение архитектурных решений.",
+          "Улучшение процессов разработки и повышение эффективности команды.",
         ],
         highlights: [
-          "Работал в небольшой команде (7 человек) над многоязычной образовательной платформой: интеграции с AI-ассистентом, сервисом видеозвонков и собственным чатом на GetStream.",
-          "Участвовал в продуктовых обсуждениях: разбивал задачи, расставлял приоритеты и оценивал сроки.",
-          "Вместе с фронтенд-командой из трёх разработчиков собрал собственный UI-kit и внедрил Feature-Sliced Design (FSD) ради масштабируемости и удобства поддержки.",
-          "Настроил монорепозиторий на Turborepo, вынес общие конфиги и модули в отдельные пакеты.",
-          "Автоматизировал синхронизацию дизайн-токенов между Figma и фронтендом.",
-          "Настроил CI/CD-пайплайны в GitHub (GitHub Actions) и GitLab.",
-          "Внедрил юнит-тесты на Vitest.",
-          "Разрабатывал и поддерживал маркетинговые лендинги.",
-          "Помог наладить код-ревью в команде, участвовал в архитектурных решениях и подсказывал коллегам при проектировании частей системы.",
+          "Реализовал мультиязычность (next-intl).",
+          "Внедрил кастомную FSD и монорепозиторий с отдельным слоем packages (Turborepo).",
+          "Интегрировал и кастомизировал чаты на основе GetStream.",
+          "Внедрил code review и юнит-тестирование (Vitest).",
+          "Систематизировал дизайн-систему и настроил синхронизацию токенов из Figma.",
+          "Настроил CI/CD в GitHub (GitHub Actions) и GitLab для автоматизации сборки, тестирования и доставки изменений.",
         ],
       },
       {
