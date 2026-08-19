@@ -79,7 +79,7 @@ const en: Content = {
       {
         company: "Established FinTech Company",
         role: "Frontend Engineer",
-        period: "May 2026 — Aug 2026",
+        period: "May 2026 - Aug 2026",
         tags: [
           "React Native",
           "Expo",
@@ -106,7 +106,7 @@ const en: Content = {
       {
         company: "EdTech Startup",
         role: "Frontend Engineer",
-        period: "Mar 2024 — Apr 2026",
+        period: "Mar 2024 - Apr 2026",
         tags: [
           "Next.js",
           "React",
@@ -142,7 +142,7 @@ const en: Content = {
       {
         company: "Self Studio",
         role: "Frontend Developer",
-        period: "Apr 2022 — Dec 2023",
+        period: "Apr 2022 - Dec 2023",
         location: "United Kingdom",
         url: "https://www.selfstudio.se/",
         tags: [
@@ -158,15 +158,15 @@ const en: Content = {
           "Git",
         ],
         highlights: [
-          "Built a React Native astrology app together with another frontend developer — it's live and generating revenue for the client (team of 5)",
+          "Built a React Native astrology app together with another frontend developer, and it's live and generating revenue for the client (team of 5)",
           "Built the studio's project showcase on Next.js with an Airtable integration, used as a calling card in tender pitches",
-          "Also helped develop an e-commerce startup in the cycling industry — Next.js, GraphQL, Tailwind CSS and plenty of integrations — among many other things (team of 6)",
+          "Also helped develop an e-commerce startup in the cycling industry, using Next.js, GraphQL, Tailwind CSS and plenty of integrations, among many other things (team of 6)",
         ],
       },
       {
         company: "Mashroom",
         role: "Frontend Developer",
-        period: "Aug 2022 — Jul 2023",
+        period: "Aug 2022 - Jul 2023",
         location: "United Kingdom",
         url: "https://www.instagram.com/mashroomrent/",
         tags: [
@@ -192,7 +192,7 @@ const en: Content = {
       {
         company: "Self-employed / Freelance",
         role: "Frontend Web Developer",
-        period: "Mar 2013 — Mar 2022",
+        period: "Mar 2013 - Mar 2022",
         tags: [
           "React",
           "TypeScript",
@@ -221,7 +221,7 @@ const en: Content = {
       {
         institution: "Belarusian State Academy of Communications",
         degree: "Higher Education · Telecommunications software development",
-        period: "2008 — 2011",
+        period: "2008 - 2011",
       },
     ],
   },
@@ -330,7 +330,7 @@ const ru: Content = {
       {
         company: "Действующая FinTech-компания",
         role: "Frontend-инженер",
-        period: "Май 2026 — Авг 2026",
+        period: "Май 2026 - Авг 2026",
         tags: [
           "React Native",
           "Expo",
@@ -357,7 +357,7 @@ const ru: Content = {
       {
         company: "EdTech-стартап",
         role: "Frontend-инженер",
-        period: "Мар 2024 — Апр 2026",
+        period: "Мар 2024 - Апр 2026",
         tags: [
           "Next.js",
           "React",
@@ -393,7 +393,7 @@ const ru: Content = {
       {
         company: "Self Studio",
         role: "Frontend-разработчик",
-        period: "Апр 2022 — Дек 2023",
+        period: "Апр 2022 - Дек 2023",
         location: "Великобритания",
         url: "https://www.selfstudio.se/",
         tags: [
@@ -410,14 +410,14 @@ const ru: Content = {
         ],
         highlights: [
           "Занимался разработкой астрологического приложения на React Native, которое сейчас активно работает и приносит прибыль клиенту (команда из 5 человек)",
-          "Собрал сайт проектов студии на Next.js с интеграцией Airtable — использовали его как визитную карточку на тендерах",
+          "Собрал сайт проектов студии на Next.js с интеграцией Airtable. Использовали его как визитную карточку на тендерах",
           "Также участвовал в разработке e-commerce-стартапа в сфере велоиндустрии: Next.js, GraphQL, Tailwind CSS и множество интеграций. И многое другое (команда из 6 человек)",
         ],
       },
       {
         company: "Mashroom",
         role: "Frontend-разработчик",
-        period: "Авг 2022 — Июл 2023",
+        period: "Авг 2022 - Июл 2023",
         location: "Великобритания",
         url: "https://www.instagram.com/mashroomrent/",
         tags: [
@@ -431,10 +431,10 @@ const ru: Content = {
         ],
         highlights: [
           "Ускорил сборку фронтенда в 5 раз",
-          "Провёл рефакторинг кода, доставшегося от другой фронтенд-команды: улучшил читаемость и поддерживаемость, а где мог — разгрузил фронтенд от лишней ответственности",
+          "Провёл рефакторинг кода, доставшегося от другой фронтенд-команды: улучшил читаемость и поддерживаемость, а где мог, разгрузил фронтенд от лишней ответственности",
           "Занимался оптимизацией страниц и ключевых метрик Google",
-          "Удалил множество дублирующихся UI-компонентов и собрал новый ui-kit — это уменьшило размер бандла и улучшило показатели Google PageSpeed",
-          "Убрал лишние зависимости и перевёл Emotion-стили в публичной части на CSS Modules — это уменьшило размер бандла и повысило производительность страниц",
+          "Удалил множество дублирующихся UI-компонентов и собрал новый ui-kit, что уменьшило размер бандла и улучшило показатели Google PageSpeed",
+          "Убрал лишние зависимости и перевёл Emotion-стили в публичной части на CSS Modules, что уменьшило размер бандла и повысило производительность страниц",
           "Сократил количество накопившихся багов и уменьшил бэклог команды, а также реализовал новые фичи, включая верификацию личности арендодателей",
           "Интеграция с WordPress: участвовал в реализации и структурировании данных кастомных блоков статей",
           "Настроил внутренние процессы фронтенд-команды: код-ревью, работу с таск-трекерами и обмен опытом",
@@ -443,7 +443,7 @@ const ru: Content = {
       {
         company: "Self-employed / Freelance",
         role: "Frontend Web Developer",
-        period: "Мар 2013 — Мар 2022",
+        period: "Мар 2013 - Мар 2022",
         tags: [
           "React",
           "TypeScript",
@@ -472,7 +472,7 @@ const ru: Content = {
       {
         institution: "Белорусская государственная академия связи",
         degree: "Высшее · Разработка ПО в телекоммуникациях",
-        period: "2008 — 2011",
+        period: "2008 - 2011",
       },
     ],
   },
