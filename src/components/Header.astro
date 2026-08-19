@@ -15,7 +15,10 @@ const langs: { code: Locale; href: string; label: string }[] = [
 ];
 ---
 
-<header class="relative mx-auto max-w-3xl px-6 pt-8 sm:px-8 sm:pt-10">
+<header
+  id="site-header"
+  class="sticky top-0 z-50 mx-auto max-w-3xl bg-transparent px-6 pt-8 pb-4 transition-[translate,padding,background-color] duration-300 ease-out will-change-transform sm:px-8 sm:pt-10 sm:pb-5 motion-reduce:transition-none"
+>
   <div class="flex flex-col items-start gap-5 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
     <a href="#top" class="flex w-full min-w-0 items-center gap-3 pr-12 leading-tight sm:w-auto sm:pr-0">
       <img
@@ -94,4 +97,46 @@ const langs: { code: Locale; href: string; label: string }[] = [
     } catch (e) {}
     syncLabel();
   });
+
+  // Hide header on scroll down, reveal on scroll up
+  const header = document.getElementById('site-header');
+  if (header) {
+    let lastY = window.scrollY;
+    let ticking = false;
+
+    const update = () => {
+      const y = window.scrollY;
+      const goingDown = y > lastY;
+
+      // Solid background + tighter top padding once scrolled off the top
+      if (y > 0) {
+        header.classList.add('bg-bg', 'pt-4', 'sm:pt-5');
+        header.classList.remove('bg-transparent', 'pt-8', 'sm:pt-10');
+      } else {
+        header.classList.add('bg-transparent', 'pt-8', 'sm:pt-10');
+        header.classList.remove('bg-bg', 'pt-4', 'sm:pt-5');
+      }
+
+      if (goingDown && y > header.offsetHeight) {
+        header.classList.add('-translate-y-full');
+      } else {
+        header.classList.remove('-translate-y-full');
+      }
+      lastY = y;
+      ticking = false;
+    };
+
+    update();
+
+    window.addEventListener(
+      'scroll',
+      () => {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      },
+      { passive: true },
+    );
+  }
 </script>
