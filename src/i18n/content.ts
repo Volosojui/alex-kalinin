@@ -78,7 +78,7 @@ const en: Content = {
     jobs: [
       {
         company: "Established FinTech Company",
-        role: "Frontend Engineer",
+        role: "Senior Frontend Developer",
         period: "May 2026 - Aug 2026",
         tags: [
           "React Native",
@@ -105,7 +105,7 @@ const en: Content = {
       },
       {
         company: "EdTech Startup",
-        role: "Frontend Engineer",
+        role: "Senior Frontend Developer",
         period: "Mar 2024 - Apr 2026",
         tags: [
           "Next.js",
@@ -165,7 +165,7 @@ const en: Content = {
       },
       {
         company: "Mashroom",
-        role: "Frontend Developer",
+        role: "Senior Frontend Developer",
         period: "Aug 2022 - Jul 2023",
         location: "United Kingdom",
         url: "https://www.instagram.com/mashroomrent/",
@@ -329,7 +329,7 @@ const ru: Content = {
     jobs: [
       {
         company: "Действующая FinTech-компания",
-        role: "Frontend-инженер",
+        role: "Senior Frontend-разработчик",
         period: "Май 2026 - Авг 2026",
         tags: [
           "React Native",
@@ -356,7 +356,7 @@ const ru: Content = {
       },
       {
         company: "EdTech-стартап",
-        role: "Frontend-инженер",
+        role: "Senior Frontend-разработчик",
         period: "Мар 2024 - Апр 2026",
         tags: [
           "Next.js",
@@ -416,7 +416,7 @@ const ru: Content = {
       },
       {
         company: "Mashroom",
-        role: "Frontend-разработчик",
+        role: "Senior Frontend-разработчик",
         period: "Авг 2022 - Июл 2023",
         location: "Великобритания",
         url: "https://www.instagram.com/mashroomrent/",
