@@ -7,6 +7,10 @@ interface Props {
 
 const { locale } = Astro.props;
 const t = getContent(locale);
+
+const metaItems = [t.hero.availability, t.hero.location].flatMap((s) =>
+  s.split(' · '),
+);
 ---
 
 <section id="top" class="mx-auto max-w-3xl px-6 pt-10 pb-10 sm:px-8 sm:pt-14 sm:pb-14">
@@ -18,9 +22,14 @@ const t = getContent(locale);
     </div>
 
     <p class="mt-6 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-muted">
-      <span>{t.hero.availability}</span>
-      <span aria-hidden="true">·</span>
-      <span>{t.hero.location}</span>
+      {
+        metaItems.map((item, i) => (
+          <>
+            {i > 0 && <span aria-hidden="true">·</span>}
+            <span>{item}</span>
+          </>
+        ))
+      }
     </p>
   </div>
 </section>
