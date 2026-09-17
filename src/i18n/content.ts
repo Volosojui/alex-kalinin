@@ -188,7 +188,7 @@ const en: Content = {
           "Git",
         ],
         highlights: [
-          "Sped up the frontend build 5× by reworking the configuration and adopting more efficient tools",
+          "Sped up the frontend build 5×, reducing build time from 50 to 10 minutes by reworking the configuration and adopting more efficient tools",
           "Set up frontend team processes alongside code review, task planning and knowledge sharing with colleagues",
           "Maintained and shipped new features (for example, landlord identity verification)",
           "Refactoring and architecture improvements: reworked significant parts of the codebase, improving readability and maintainability while reducing excessive load on the frontend",
@@ -446,7 +446,7 @@ const ru: Content = {
           "Git",
         ],
         highlights: [
-          "Ускорил сборку фронта в 5 раз за счёт пересмотра конфигурации и использования более эффективных инструментов",
+          "Ускорил сборку фронтенда в 5 раз, сократив время сборки с 50 до 10 минут за счёт пересмотра конфигурации и внедрения более эффективных инструментов",
           "Организовал процессы frontend-команды, а также занимался code review, участвовал в постановке задач и делился опытом с коллегами",
           "Поддержка и внедрение нового функционала (например, верификация владельцев недвижимости)",
           "Рефакторинг и улучшение архитектуры: переработал значительные участки кода, повысив читаемость, поддерживаемость и снизив избыточную нагрузку на фронтенд",
