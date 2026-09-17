@@ -1,6 +1,7 @@
 ---
 import { getRelativeLocaleUrl } from 'astro:i18n';
 import { getContent, resolveLocale, LOCALES } from '../i18n/content';
+import Container from './Container.astro';
 import avatar from '../assets/avatar.jpeg';
 
 const locale = resolveLocale(Astro.currentLocale);
@@ -13,9 +14,10 @@ const langs = LOCALES.map((code) => ({
 }));
 ---
 
-<header
+<Container
+  as="header"
   id="site-header"
-  class="sticky top-0 z-50 mx-auto max-w-3xl bg-transparent px-6 pt-8 pb-4 transition-[translate,padding,background-color] duration-300 ease-out will-change-transform sm:px-8 sm:pt-10 sm:pb-5 motion-reduce:transition-none"
+  class="sticky top-0 z-50 bg-transparent pt-8 pb-4 transition-[translate,padding,background-color] duration-300 ease-out will-change-transform sm:pt-10 sm:pb-5 motion-reduce:transition-none"
 >
   <div class="flex flex-col items-start gap-5 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
     <a href="#top" class="flex w-full min-w-0 items-center gap-3 pr-12 leading-tight sm:w-auto sm:pr-0">
@@ -72,7 +74,7 @@ const langs = LOCALES.map((code) => ({
       </button>
     </div>
   </div>
-</header>
+</Container>
 
 <script>
   const toggle = document.getElementById('theme-toggle');
