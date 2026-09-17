@@ -282,9 +282,11 @@ const en: Content = {
           "GetStream",
           "Figma Tokens",
           "Veriff",
-          "WordPress",
-          "Bitrix",
         ],
+      },
+      {
+        title: "CMS",
+        items: ["WordPress", "Bitrix"],
       },
       {
         title: "AI-assisted",
@@ -539,9 +541,11 @@ const ru: Content = {
           "GetStream",
           "Figma Tokens",
           "Veriff",
-          "WordPress",
-          "Bitrix",
         ],
+      },
+      {
+        title: "CMS",
+        items: ["WordPress", "Bitrix"],
       },
       {
         title: "AI-инструменты",
