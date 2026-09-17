@@ -1,5 +1,5 @@
 ---
-import Container from './Container.astro';
+import SectionContainer from './SectionContainer.astro';
 
 interface Props {
   title: string;
@@ -9,10 +9,10 @@ const { title } = Astro.props;
 ---
 
 <section>
-  <Container class="py-10 sm:py-14">
+  <SectionContainer>
     <header class="mb-10 sm:mb-14">
       <h2 class="text-lg font-normal tracking-tight text-content">{title}</h2>
     </header>
     <slot />
-  </Container>
+  </SectionContainer>
 </section>

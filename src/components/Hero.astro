@@ -1,6 +1,6 @@
 ---
 import { getContent, resolveLocale } from '../i18n/content';
-import Container from './Container.astro';
+import SectionContainer from './SectionContainer.astro';
 
 const t = getContent(resolveLocale(Astro.currentLocale));
 
@@ -10,7 +10,7 @@ const metaItems = [t.hero.availability, t.hero.location].flatMap((s) =>
 ---
 
 <section id="top">
-  <Container class="py-10 sm:py-14">
+  <SectionContainer>
     <div class="max-w-2xl">
       <h1 class="sr-only">{t.hero.name}, {t.hero.role}</h1>
 
@@ -29,5 +29,5 @@ const metaItems = [t.hero.availability, t.hero.location].flatMap((s) =>
         }
       </p>
     </div>
-  </Container>
+  </SectionContainer>
 </section>
