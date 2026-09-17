@@ -27,7 +27,7 @@ export interface Education {
 export interface Content {
   meta: { title: string; description: string };
   langName: string;
-  nav: { journey: string; education: string; skills: string; contact: string };
+  sections: { journey: string; contact: string };
   hero: {
     name: string;
     role: string;
@@ -55,10 +55,8 @@ const en: Content = {
       "Frontend Engineer specializing in Next.js, React and TypeScript. Building clean, thoughtful and performant web products.",
   },
   langName: "English",
-  nav: {
+  sections: {
     journey: "🧑‍💻 Work Experience",
-    education: "🎓 Education",
-    skills: "🛠️ Skills",
     contact: "🤝 Contacts",
   },
   hero: {
@@ -314,10 +312,8 @@ const ru: Content = {
       "Frontend-инженер: Next.js, React и TypeScript. Создаю чистые, продуманные и быстрые веб-продукты.",
   },
   langName: "Русский",
-  nav: {
+  sections: {
     journey: "🧑‍💻 Опыт работы",
-    education: "🎓 Образование",
-    skills: "🛠️ Навыки",
     contact: "🤝 Контакты",
   },
   hero: {

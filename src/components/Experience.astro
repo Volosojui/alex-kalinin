@@ -6,7 +6,7 @@ const t = getContent(resolveLocale(Astro.currentLocale));
 const { jobs } = t.journey;
 ---
 
-<Section id="experience" title={t.nav.journey}>
+<Section title={t.sections.journey}>
   <div class="space-y-16">
     {
       jobs.map((job) => (
