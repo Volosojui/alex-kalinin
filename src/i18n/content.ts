@@ -572,6 +572,15 @@ export function getContent(locale: Locale): Content {
   return content[locale] ?? content[DEFAULT_LOCALE];
 }
 
+/**
+ * Normalize `Astro.currentLocale` (typed `string | undefined`) to a known
+ * `Locale`, falling back to the default. Lets components read the active
+ * language from the URL instead of threading a `locale` prop.
+ */
+export function resolveLocale(value: string | undefined): Locale {
+  return LOCALES.includes(value as Locale) ? (value as Locale) : DEFAULT_LOCALE;
+}
+
 /** Language-neutral contact links (labels come from the dictionary). */
 export const CONTACT_LINKS = {
   email: "alessandro.kalinin@gmail.com",

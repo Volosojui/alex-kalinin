@@ -1,20 +1,13 @@
 ---
-import type { Locale } from '../i18n/content';
 import Header from './Header.astro';
 import Hero from './Hero.astro';
 import Experience from './Experience.astro';
 import Contacts from './Contacts.astro';
-
-interface Props {
-  locale: Locale;
-}
-
-const { locale } = Astro.props;
 ---
 
-<Header locale={locale} />
+<Header />
 <main>
-  <Hero locale={locale} />
-  <Experience locale={locale} />
-  <Contacts locale={locale} />
+  <Hero />
+  <Experience />
+  <Contacts />
 </main>
