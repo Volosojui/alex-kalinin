@@ -272,7 +272,7 @@ const en: Content = {
       },
       {
         title: "Testing",
-        items: ["Vitest", "React Testing Library", "Cypress", "Code Reviews"],
+        items: ["Vitest", "React Testing Library", "Cypress"],
       },
       { title: "CI/CD", items: ["GitHub Actions", "GitLab CI"] },
       {
@@ -529,7 +529,7 @@ const ru: Content = {
       },
       {
         title: "Тестирование",
-        items: ["Vitest", "React Testing Library", "Cypress", "Код-ревью"],
+        items: ["Vitest", "React Testing Library", "Cypress"],
       },
       { title: "CI/CD", items: ["GitHub Actions", "GitLab CI"] },
       {
