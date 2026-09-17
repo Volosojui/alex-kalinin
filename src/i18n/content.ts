@@ -98,7 +98,7 @@ const en: Content = {
           "Breaking tasks down and setting priorities",
         ],
         highlights: [
-          "Built two mobile apps and two web platforms, delivering them quickly",
+          "Built two mobile apps and two web platforms",
           "Built sign-up for individuals and businesses, with lead capture and CRM sync in HubSpot",
           "Integrated Sumsub for KYC/KYB verification",
           "Implemented JWT access/refresh authentication and two-factor authentication (TOTP/SMS)",
@@ -355,7 +355,7 @@ const ru: Content = {
           "Декомпозиция задач и их приоритизация",
         ],
         highlights: [
-          "Разработал два мобильных приложения и две веб-платформы, обеспечив быструю доставку",
+          "Разработал два мобильных приложения и две веб-платформы",
           "Реализовал регистрацию физических лиц и компаний со сбором лидов и синхронизацией с CRM в HubSpot",
           "Интегрировал Sumsub для верификации KYC/KYB",
           "Реализовал JWT-аутентификацию с access/refresh-токенами и двухфакторную аутентификацию (TOTP/SMS)",
