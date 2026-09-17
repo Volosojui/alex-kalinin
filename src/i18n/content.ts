@@ -126,7 +126,7 @@ const en: Content = {
           "GetStream",
         ],
         responsibilities: [
-          "Building a multilingual learning platform in a team of 7 developers (3 frontend developers)",
+          "Building a multilingual learning platform",
           "Taking part in business discussions: breaking tasks down, setting priorities and timelines",
           "Designing the frontend architecture",
           "Growing the design system and UI kit",
@@ -167,9 +167,9 @@ const en: Content = {
           "Git",
         ],
         highlights: [
-          "Built a React Native astrology app together with another frontend developer, now live and generating revenue for the client (team of 5)",
+          "Built a React Native astrology app together with another frontend developer, now live and generating revenue for the client",
           "Built the studio's project showcase on Next.js with an Airtable integration, used as a calling card in tender pitches",
-          "Also helped develop an e-commerce startup in the cycling industry, using Next.js, GraphQL, Tailwind CSS and plenty of integrations, among many other things (team of 6)",
+          "Also helped develop an e-commerce startup in the cycling industry, using Next.js, GraphQL, Tailwind CSS and plenty of integrations, among many other things",
         ],
       },
       {
@@ -384,7 +384,7 @@ const ru: Content = {
           "GetStream",
         ],
         responsibilities: [
-          "Разработка многоязычной образовательной платформы в составе команды из 7 разработчиков (3 frontend-разработчика)",
+          "Разработка многоязычной образовательной платформы",
           "Участие в обсуждении бизнес-задач, их декомпозиции, определении приоритетов и сроков",
           "Проектирование frontend-архитектуры",
           "Развитие дизайн-системы и UI-кита",
@@ -425,9 +425,9 @@ const ru: Content = {
           "Git",
         ],
         highlights: [
-          "Занимался разработкой астрологического приложения на React Native, которое сейчас активно работает и приносит прибыль клиенту (команда из 5 человек)",
+          "Занимался разработкой астрологического приложения на React Native, которое сейчас активно работает и приносит прибыль клиенту",
           "Собрал сайт проектов студии на Next.js с интеграцией Airtable. Использовали его как визитную карточку на тендерах",
-          "Также участвовал в разработке e-commerce-стартапа в сфере велоиндустрии: Next.js, GraphQL, Tailwind CSS и множество интеграций. И многое другое (команда из 6 человек)",
+          "Также участвовал в разработке e-commerce-стартапа в сфере велоиндустрии: Next.js, GraphQL, Tailwind CSS и множество интеграций. И многое другое",
         ],
       },
       {
